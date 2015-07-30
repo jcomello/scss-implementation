@@ -1,0 +1,1 @@
+#regra-1 { single-property:23px; other-property:23px; other-one-property:23px; .testando-mais-um { testando-propriedade:67px; } }
