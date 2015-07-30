@@ -1,4 +1,6 @@
-module RJSON
+require 'strscan'
+
+module RCSS
   class Tokenizer
     SELECTOR  = /([.#][a-zA-Z][^{]{1,})/ix
     PROPERTY  = /[^{}](.+?):(.+?);[^{}]/ix
