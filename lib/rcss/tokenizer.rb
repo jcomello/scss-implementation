@@ -15,14 +15,14 @@ module RCSS
       return if @ss.eos?
 
       case
-      when text = @ss.scan(SELECTOR)   then [:SELECTOR, text]
-      when text = @ss.scan(BEGINRULE)  then [:BEGINRULE, text]
-      when text = @ss.scan(PROPERTY)   then [:PROPERTY, text]
-      when text = @ss.scan(ENDRULE)    then [:ENDRULE, text]
+      when text = @ss.scan(SELECTOR)   then [:SELECTOR, text.strip]
+      when text = @ss.scan(BEGINRULE)  then [:BEGINRULE, text.strip]
+      when text = @ss.scan(PROPERTY)   then [:PROPERTY, text.strip]
+      when text = @ss.scan(ENDRULE)    then [:ENDRULE, text.strip]
 
       else
         x = @ss.getch
-        [x, x]
+        [x.strip,x.strip]
       end
     end
   end

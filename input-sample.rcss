@@ -7,3 +7,9 @@
     testando-propriedade:67px;
   }
 }
+#regra-2 {
+  agora-quero-ver:14px;
+  .testando-mais-dois {
+    propriedade-texte:69px;
+  }
+}
