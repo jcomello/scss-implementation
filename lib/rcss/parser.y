@@ -18,8 +18,8 @@ rule
     ;
 
     selector : SELECTOR { @handler.selector(val[0]) }
-    begin_rule : BEGINRULE { @handler.begin_rule }
-    end_rule : ENDRULE { @handler.end_rule };
+    begin_rule : BEGINRULE
+    end_rule : ENDRULE
 
   properties
     : property

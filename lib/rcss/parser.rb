@@ -81,8 +81,8 @@ racc_reduce_table = [
   5, 9, :_reduce_none,
   6, 9, :_reduce_none,
   1, 10, :_reduce_10,
-  1, 11, :_reduce_11,
-  1, 12, :_reduce_12,
+  1, 11, :_reduce_none,
+  1, 12, :_reduce_none,
   1, 13, :_reduce_none,
   2, 13, :_reduce_none,
   1, 14, :_reduce_15 ]
@@ -165,15 +165,9 @@ def _reduce_10(val, _values, result)
     result
 end
 
-def _reduce_11(val, _values, result)
- @handler.begin_rule 
-    result
-end
+# reduce 11 omitted
 
-def _reduce_12(val, _values, result)
- @handler.end_rule 
-    result
-end
+# reduce 12 omitted
 
 # reduce 13 omitted
 

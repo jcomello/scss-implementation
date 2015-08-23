@@ -6,7 +6,7 @@ module RCSS
 
     def initialize
       @current_selector
-      @stack = Hash.new
+      @stack = {}
     end
 
     def begin_rule
@@ -28,7 +28,7 @@ module RCSS
     end
 
     def scalar(p)
-      set_scalar(@stack, @current_selector, p)
+      @stack = set_scalar(@stack, @current_selector, p)
     end
 
     def result
