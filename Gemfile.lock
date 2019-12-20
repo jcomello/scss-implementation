@@ -9,5 +9,8 @@ PLATFORMS
 DEPENDENCIES
   racc
 
+RUBY VERSION
+   ruby 2.1.0p0
+
 BUNDLED WITH
-   1.10.5
+   1.17.3
